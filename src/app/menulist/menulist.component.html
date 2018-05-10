@@ -1,0 +1,21 @@
+<!-- menu list -->
+
+<div class="_lunchtimeApp">
+
+  <h1>Menüs</h1>
+
+  <div class="menulist">
+    <div *ngFor="let menu of menus" class="menu mensa mensa-{{menu.mensa}}" data-id="{{menu.id}}"> 
+        <h2>{{menu.name}}</h2>
+        <p class="description">{{menu.description}}</p>
+        <p class="price">{{menu.price}}</p>
+        <div class="heart">
+          <span class="heart_counter">{{menu.heart_counter}}</span>
+          <img class="icon heart_icon" src="http://api.kikoweb.ch/img/heart_outline_black.svg">
+          <img class="icon heart_icon_filled" src="http://api.kikoweb.ch/img/heart_filled_pink.svg">
+        </div>
+        <div class="tag">{{menu.mensa}}</div>
+      </div>
+  </div>
+
+</div>
